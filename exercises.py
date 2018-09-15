@@ -12,17 +12,22 @@ Print out that many copies of the previous message on separate lines. (Hint: the
 
 '''
 
+ # import datetime so that we'll know the current year
 from datetime import datetime
 
+# this variable provides us the current year
 year = datetime.now().year
 
+# ask the user to type in his name and his age
 name = input("Type in your name:\n")
 age = input("How old are you?\n")
 age = int(age)
 
+# make the difference between 100 years and user's age, then make the sum to find out when the user will be 100 years old
 agediff = (100 - age)
 age100 = (year + agediff)
 
+# display the results
 print("Your name is ", name, "and you are", age, "years old.")
 print("You'll be 100 years old in", age100)
 
