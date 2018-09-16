@@ -122,6 +122,49 @@ print(divisor_list)
 
 Exercise 5:
 
+Take two lists, say for example these two:
 
+  a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+  b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+  
+and write a program that returns a list that contains only the elements that are common between the lists (without duplicates). 
+Make sure your program works on two lists of different sizes.
+
+Extras:
+Randomly generate two lists to test this
+Write this in one line of Python (don’t worry if you can’t figure this out at this point - we’ll get to it soon)
+
+'''
+
+# import random to use randrange
+import random
+
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+# generate 2 random list from 1 to 10 and up to 10 numbers. it will give us duplicates as well
+a = [random.randrange(1, 10, 1) for _ in range(10)]
+b = [random.randrange(1, 10, 1) for _ in range(10)]
+
+# print the lists so we can check the results
+print(a)
+print(b)
+
+# create a new list to append the numbers from both random generated lists
+c = []
+
+# verify first the items in b and if they show in a, append them to list c. 'if not i in c' makes sure that we won't get duplicates in 
+# our list
+for i in b:
+    if i in a:
+        if i not in c:
+            c.append(i)
+
+# output the new list
+print(c)
+
+''' 
+
+Exercise 6:
 
 '''
