@@ -98,3 +98,17 @@ Create a program that asks the user for a number and then prints out a list of a
 For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)
 
 '''
+
+a = range(2, 101)
+
+b = input("Type in a number:\n")
+b = int(b)
+
+c = [i for i in a if i%b ==0]
+print(c)
+
+'''
+
+Exercise 5:
+
+'''
