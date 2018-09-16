@@ -99,16 +99,29 @@ For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)
 
 '''
 
-a = range(2, 101)
+# ask user for input
+a = input("Type in a number: \n")
+a = int(a)
 
-b = input("Type in a number:\n")
-b = int(b)
+# generate a list based on the user input
+# the a + 1 generates a higher number than a so we're sure we'll find the user's number in the list
+list_range = list(range(1, a +1))
 
-c = [i for i in a if i%b ==0]
-print(c)
+# create an empty list to append the results
+divisor_list = []
+
+# divide a to all the number in the list and if i in the list is a divisor of a, then append it to the newly created list
+for i in list_range:
+    if a % i == 0:
+        divisor_list.append(i)
+
+# output the result
+print(divisor_list)
 
 '''
 
 Exercise 5:
+
+
 
 '''
