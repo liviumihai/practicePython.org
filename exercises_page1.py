@@ -167,4 +167,17 @@ print(c)
 
 Exercise 6:
 
+Ask the user for a string and print out whether this string is a palindrome or not. 
+(A palindrome is a string that reads the same forwards and backwards.)
+
 '''
+
+word = input("Type in a word: \n")
+
+x = word[:]
+y = word[::-1]
+
+if x == y:
+    print("It's a palindrome")
+else:
+    print("It's not a palindrome")
